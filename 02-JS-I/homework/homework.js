@@ -4,12 +4,12 @@ git// En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 const nuevaString = 'Hola';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 8;
+const nuevoNum = 6;
 
 // Crea una variable booleana:
-const nuevoBool = true;
+const nuevoBool = false;
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - 5 === 5;
+const nuevaResta = 6 - 2 === 4;
 
 // Resuelve el siguiente problema matemático:
 const nuevaMultiplicacion = 10 * 4 === 40 ;
@@ -35,13 +35,13 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return   6+ 4;
+  return   x+ y;
   }
    
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return 10 - 2;
+  return x-y;
   }
 
 
@@ -49,7 +49,7 @@ function resta(x, y) {
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  return (5 * 4);
+  return (x * y);
   }
   
   
