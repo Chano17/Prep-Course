@@ -49,7 +49,7 @@ function saludo(idioma) {
   else if (idioma === "mandarin"){
   return "Ni Hao!";
   }
-  else if (idioma ==== "ingles"){
+  else if (idioma === "ingles"){
   return "Hello!";
   }
   else {
