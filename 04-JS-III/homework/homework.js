@@ -3,16 +3,14 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-  array = [0];
+  return array = [0];
   }
    
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-return ( array[array.length -1]);
+return  array[array.length -1];
 }
-
-
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
@@ -26,10 +24,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var array =[1,2,3,4,5,6];
-  for( let i = 0; i< array.length; i++){
-    return (array[i]);
+  var nuevoArray =[];
+  for( var i = 0; i < array.length; i++){
+    nuevoArray[i] = array[i] +1;
   }
+  return nuevoArray;
 }
 
 
@@ -37,9 +36,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  var array =['Juan', 'Jose', 'Maria'];
-  array.push('elemento');
-  return (array);
+  array =[array.length] = elemento;
+  return array;
 }
 
 
@@ -48,9 +46,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  var array =['Juan', 'Jose', 'Maria'];
-  array.unshift('Cristian')
-  return (array);
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -70,7 +67,7 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   for(var i = 0; i <array.length; i++){
-    if( array[i] ===elemento){
+    if( array[i] === elemento){
       return true;
     }
       }
@@ -82,8 +79,8 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-   var suma;
-   for(var i=0; i<numeros.length; i++){
+   var suma = 0;
+   for(var i=0; i< numeros.length; i++){
     suma = suma + numeros[i];
    }
    return suma; 
@@ -94,10 +91,8 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  return promedio (resultadosTest) / resultadosTest.length;
+  return agregarNumeros (resultadosTest) / resultadosTest.length;
 }
-
-
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
@@ -121,7 +116,7 @@ function multiplicarArgumentos() {
   return 0;
   var total = 1; 
   for( var i=0; i< arguments.length; i++){
-   total = total * argumentos[i];  
+   total = total * arguments[i];  
   } 
   return total;
   }
@@ -130,8 +125,8 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
- var contador = 0;
- for( var i=0; i < arreglo.length; i++){
+ let contador = 0;
+ for( let i=0; i < arreglo.length; i++){
   if( arreglo[i] > 19){
     contador++
   } 
@@ -250,7 +245,7 @@ function continueStatement(numero) {
   var array = [];
   var suma  = numero;
   for(var i = 0; i<10; i++){
-    if(suma ===5) continue;
+    if(i ===5) continue;
     else { 
       suma = suma + 2;
       array.push(suma);
