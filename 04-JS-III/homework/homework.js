@@ -98,13 +98,13 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-   var superior = numeros[0];
-   for(var i = 1 ; i<numeros.length; i++){
-    if (numeros[i] > superior){
-      superior = numeros[i];
+   var maximo = numeros[0];
+   for(var i = 1 ; i <numeros.length; i++){
+    if (numeros[i] > maximo){
+      maximo = numeros[i];
     }
    }
-   return superior;
+   return maximo;
 }
 
 
@@ -131,7 +131,7 @@ function cuentoElementos(arreglo){
     contador++
   } 
 }
-  return contador;
+  return contador
 }
 
 
@@ -142,9 +142,9 @@ function diaDeLaSemana(numeroDeDia) {
   //Escribe tu código aquí   
   
     if( numeroDeDia === 1 || numeroDeDia===7){
-      return "Es fin de Semana";
+      return "Es fin de Semana"
     } 
-    return "Es dia Laboral";
+    return "Es dia Laboral"
   }
 
 
@@ -181,7 +181,7 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
    var nuevoArray =[];
-  for(let i=0; i <array.length; i++){
+  for(let i = 0; i <array.length; i++){
     if( array[i] === 'Enero' || array[i] ==='Marzo' || array[i] ==='Noviembre'){
       nuevoArray.push(array[i]);
    }
@@ -199,10 +199,10 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-  var nuevoArray =[];
-  for(let i=0; i< array.length; i++){
+  var nuevoArray = [];
+  for(let i = 0; i < array.length; i++){
     if(Array[i] >100 ){
-      nuevoArray.push(array [i]);
+      nuevoArray.push(array[i]);
     }
   }
     return nuevoArray;
