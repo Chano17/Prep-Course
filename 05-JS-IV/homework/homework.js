@@ -48,8 +48,9 @@ function eliminarPropiedad (objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
-      delete objeto[propiedad];
-      return objeto;
+  delete objeto[unaPropiedad];
+
+  return objeto;
 }
 
 function nuevoUsuario (nombre, email, password) {
@@ -134,7 +135,7 @@ function sumarLikesDeUsuario (usuario) {
   // Devuelve la suma
   // Tu código:
 var suma = 0;
-  for (var i=0; i< usuario.post.length; i++){
+  for (var i=0; i < usuario.post.length; i++){
     suma = suma + usuario.post[i].likes;
 }
 return suma;
