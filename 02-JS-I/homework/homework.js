@@ -7,12 +7,12 @@ const nuevaString = 'Hola';
 const nuevoNum = 6;
 
 // Crea una variable booleana:
-const nuevoBool = false;
+const nuevoBool = true;
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 6 - 2 === 4;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
@@ -49,7 +49,7 @@ function resta(x, y) {
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  return (x * y);
+  return x * y;
   }
   
   
@@ -75,9 +75,7 @@ function tienenMismaLongitud(str1,str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.length === str2.length){
-    return true;
-  }else { return false;}
+  return str1.length === str2.length;
  }
   
   
@@ -98,11 +96,7 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
    // De lo contrario, devuelve "false"
   // Tu código:
-  if( num > 50){
-    return true;
-   } else {
-  return false;
-  }
+  return num > 50;
 }
 
 function obtenerResto(x, y) {
@@ -110,9 +104,6 @@ function obtenerResto(x, y) {
   // Tu código:
    return  x % y;
  }
-
-
-
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
@@ -166,7 +157,7 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.ceil(num)
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
@@ -181,7 +172,8 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero === 0) {
-    return false}
+    return false;
+  }
     else if (numero > 0 ) {
       return "es positivo";
     }
@@ -222,7 +214,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  return lado * 4;
+  return lado * 4
   
 } 
 
@@ -230,7 +222,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-return (base*altura)/2;
+return (base*altura)/2
 }
 
 
@@ -238,8 +230,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return euro * 1.2;
-  
+  return euro * 1.2;  
 }
 
 
@@ -257,7 +248,6 @@ function esVocal(letra){
   }
     return "Dato incorrecto"
 }
-
 
 
 
