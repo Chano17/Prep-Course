@@ -4,12 +4,12 @@ git// En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 const nuevaString = 'Hola';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 6;
+const nuevoNum  =8 ;
 
 // Crea una variable booleana:
 const nuevoBool = true;
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 6 - 2 === 4;
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
 const nuevaMultiplicacion = 10 * 4 === 40;
