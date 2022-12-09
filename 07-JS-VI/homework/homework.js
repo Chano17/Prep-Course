@@ -27,7 +27,7 @@ function sumarArray(numeros, cb) {
   //Tu código:
   var sumaTotal = numeros.reduce(function(acc, curr) {
     return acc + curr;
-  },0);
+  });
   cb(sumaTotal);
 }
 
